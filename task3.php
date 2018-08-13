@@ -4,7 +4,7 @@ namespace src\Integration;
 
 class DataProvider
 {
-    private $host;
+    private $host;// typehints
     private $user;
     private $password;
 
@@ -13,7 +13,7 @@ class DataProvider
      * @param $user
      * @param $password
      */
-    public function __construct($host, $user, $password)
+    public function __construct($host, $user, $password)// typehints
     {
         $this->host = $host;
         $this->user = $user;
