@@ -2,6 +2,13 @@
 
 namespace src\Integration;
 
+/**
+ * 1) We should prefer composition instead of inheritance where possible. 
+ * `DecoratorManager` and `DecoratorManager` resolves different problems. They should not be inherited
+ * 2) Typehints are missed in many places
+ * 3) Docblocks are missed in many places
+ * 4) Move `host`, `user` and `password` to the saparate entity, like `Auth`, and pass it to the constructor
+ */
 class DataProvider
 {
     private $host;// typehints
